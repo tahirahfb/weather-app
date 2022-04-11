@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./weather-app.css"/>
+    <link rel="icon" type="images/x-icon" href="images/weather_app_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/90f1f94d05.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header><img src="images/weather_app_final_logo.png" alt="Weather App"></header>
+    
+    <h1>Daily Weather</h1>
+
+    <div class="location">
+      <h3>Enter the zipcode to view current weather information:</h3>  
+        <div class="z_code">
+            <form>
+            <label>Zipcode:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="28216" size="5">
+            <input type="submit" value="Submit" id="btn">
+            </form>
+        </div>
+    </div>
+
+    <div class="weather_info">
+        <div id="city"></div>
+        <div id="current_time"></div>
+        <div id="current_date"></div>
+        <div id="current_temp"><div id="temp_fahrenheit"></div><button type="submit" id="celsius">to &deg;C</button></div>
+        <div id="current_icon"></div>
+        <div id="current_conditions"></div>
+        <div id="temp_hi_low"><div id="high"></div><div class="middle_line2"></div><div id="low"></div></div>
+        <div id="more_data">
+            <div class="added_data">
+                <div id="feels_like">
+                    <div class="added_title">Feels Like</div>
+                    <div class="img_and_data">
+                        <div class="icon"><i class="fa-solid fa-temperature-high" style="font-size:26px; color: #0070FF;"></i></div>
+                        <div id="feels_like_current"></div>                    
+                    </div>
+                </div>
+                <div class="middle_line"></div>
+                <div id="clouds">
+                    <div class="added_title">Clouds</div>
+                    <div class="img_and_data">
+                        <div class="icon"><i class="fa-solid fa-cloud" style="font-size:26px; color: #0070FF;"></i></div>
+                        <div id="clouds_current"></div>
+                    </div>
+                </div>
+           </div>     
+            
+            <div class="added_data">
+                <div id="pressure">
+                    <div class="added_title">Pressure</div>
+                    <div class="img_and_data">
+                    <div class="icon"><i class="fa-solid fa-gauge" style="font-size:26px; color: #0070FF;"></i></div>
+                    <div id="pressure_current"></div>
+                    </div>
+                </div>
+                <div class="middle_line"></div>
+                <div id="humidity">
+                    <div class="added_title">Humidity</div>
+                    <div class="img_and_data">
+                    <div class="icon"><i class="fa fa-tint" aria-hidden="true" style="font-size:26px; color: #0070FF;"></i></div>
+                    <div id="humidity_current"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="added_data">
+                <div id="wind">
+                    <div class="added_title">Wind</div>
+                    <div class="img_and_data">
+                    <div class="icon"><i class="fa-solid fa-wind" style="font-size:26px; color: #0070FF;"></i></div>
+                    <div id="wind_current"></div>
+                    </div>
+                </div>
+                <div class="middle_line"></div>
+                <div id="visibility">
+                    <div class="added_title">Visibility</div>
+                    <div class="img_and_data">
+                    <div class="icon"><i class="fa-solid fa-eye" style="font-size:26px; color: #0070FF;"></i></div>
+                    <div id="visibility_current"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="added_data">
+                <div id="sunrise">
+                    <div class="added_title">Sunrise</div>
+                    <div class="img_and_data">
+                    <div class="icon"><img src="images/sunrise.png" alt="sunrise"></div>
+                    <div id="sunrise_current"></div>
+                    </div>
+                </div>
+                <div class="middle_line"></div>
+                <div id="sunset">
+                    <div class="added_title">Sunset</div>
+                    <div class="img_and_data">
+                    <div class="icon"><img src="images/sunset.png" alt="sunset"></div>
+                    <div id="sunset_current"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+    <footer>
+        Tahirah Farrer-Bradley &copy; 2022
+    </footer>
+    <script type="text/javascript" src="./index.js" charset="utf-8"></script>  
+</body>
+</html>
