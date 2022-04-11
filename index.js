@@ -41,7 +41,7 @@ const submitButton = document.querySelector('form');
 submitButton.addEventListener('submit', function getWeatherData(e){
     e.preventDefault()
     var zip = document.getElementById('zipcode').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},${country_code}&units=imperial&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},${country_code}&units=imperial&appid=${API_KEY}`)
     .then((response) => response.json())
     .then(data => {
             console.log(data);
